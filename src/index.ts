@@ -13,7 +13,6 @@ const nodeOps: RendererOptions = {
 
     },
     createElement(type, isSvg, isCustomizedBuiltIn, vnodeProps) {
-        console.log(vnodeProps)
         const output = document.createElement(type)
         output.classList.add('custom-renderer')
         // output
