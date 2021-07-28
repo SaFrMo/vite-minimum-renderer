@@ -15,5 +15,17 @@
     "typescript": "^4.3.2",
     "vite": "^2.4.4",
     "vue-tsc": "^0.2.2"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "./dist/mvp-renderer.umd.js",
+  "module": "./dist/mvp-renderer.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mvp-renderer.es.js",
+      "require": "./dist/mvp-renderer.umd.js"
+    }
   }
 }
