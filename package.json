@@ -1,6 +1,6 @@
 {
   "name": "mvp-renderer",
-  "version": "0.0.106",
+  "version": "0.0.107",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -29,5 +29,6 @@
       "import": "./dist/index.js",
       "require": "./dist/index.js"
     }
-  }
+  },
+  "types": "./dist/index.d.ts"
 }
