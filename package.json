@@ -1,10 +1,11 @@
 {
   "name": "mvp-renderer",
-  "version": "0.0.105",
+  "version": "0.0.106",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "build:renderer": "tsc src/*.ts --outDir dist"
   },
   "dependencies": {
     "vite-dts": "1.0.3",
@@ -21,12 +22,12 @@
     "dist",
     "src"
   ],
-  "main": "./dist/mvp-renderer.umd.js",
-  "module": "./dist/mvp-renderer.es.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "exports": {
     ".": {
-      "import": "./dist/mvp-renderer.es.js",
-      "require": "./dist/mvp-renderer.umd.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
     }
   }
 }

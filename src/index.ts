@@ -62,14 +62,12 @@ export const createApp = ((...args) => {
 
         container.innerHTML = ''
         const proxy = mount(container, false, container instanceof SVGElement)
-        console.log('proxy', proxy, container)
         if (container instanceof Element) {
             container.removeAttribute('v-cloak')
             container.setAttribute('data-v-app', '')
         }
         return proxy
     }
-    console.log('app', app)
     return app
 }
 ) as CreateAppFunction<Element>
